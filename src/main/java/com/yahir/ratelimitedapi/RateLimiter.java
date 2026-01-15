@@ -9,7 +9,7 @@ import java.util.function.Supplier;
 public class RateLimiter {
 
     private final Map<String, Deque<Long>> requestsTimesByKey = new HashMap<>();
-    private final int  MAX_REQUESTS = 5;
+    private final int MAX_REQUESTS = 5;
     private final long WINDOW_MS = 60_000;
     private Supplier<Long> clock = System::currentTimeMillis;
 
