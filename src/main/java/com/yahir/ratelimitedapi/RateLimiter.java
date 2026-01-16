@@ -1,11 +1,15 @@
 package com.yahir.ratelimitedapi;
 
+import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
+
 import java.util.ArrayDeque;
 import java.util.Deque;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.function.Supplier;
 
+@Component
 public class RateLimiter {
 
     private final Map<String, Deque<Long>> requestsTimesByKey = new HashMap<>();

@@ -1,7 +1,9 @@
 package com.yahir.ratelimitedapi;
 
 
+import com.yahir.ratelimitedapi.controller.PingController;
 import org.junit.jupiter.api.Test;
+import org.springframework.boot.webmvc.test.autoconfigure.WebMvcTest;
 
 import java.util.function.Supplier;
 
